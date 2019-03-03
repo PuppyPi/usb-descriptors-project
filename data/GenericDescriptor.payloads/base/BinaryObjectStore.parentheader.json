@@ -1,0 +1,20 @@
+[
+	"doc": "TODO",
+	
+	"parent": null,
+	"container": "Generic",
+		"bDescriptorType": 15,
+	
+	
+	
+	"fields":
+	[
+		["u16l", "wTotalLength", "
+				Number Length of this descriptor and all of its sub descriptors"
+		],
+		
+		["u8", "bNumDeviceCaps", "
+				Number The number of separate device capability descriptors in the BOS"
+		]
+	]
+]

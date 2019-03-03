@@ -1,0 +1,29 @@
+[
+	"doc": "
+		Defines a device capability specific to a particular platform/operating system
+		USB 3.2 Specification, §9.6.2.4, p382, Table 9-18
+		USB 3.2 Specification, §9.6.2, p378, Table 9-14",
+	
+	"container": "DeviceCapability",
+		"bDevCapabilityType": 5
+	
+	
+	
+	"fields":
+	[
+		["u8", "bReserved", "
+				This field is reserved and shall be set to zero."
+		],
+		
+		[16, "PlatformCapabilityUUID", "
+				This is a 128-bit number that uniquely identifies
+				a platform specific capability of the device."
+		],
+		
+		["*", "CapabilityData", "
+				This is a variable-length field containing data
+				associated with the platform specific capability.
+				This field may be zero bytes in length."
+		]
+	]
+]

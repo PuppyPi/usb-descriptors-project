@@ -1,0 +1,36 @@
+[
+	"doc": "TODO",
+	
+	"parent": "Configuration",
+	"container": "Generic",
+		"bDescriptorType": 7,
+	
+	
+	
+	"fields":
+	[
+		["u16l", "wTotalLength", "
+				Total length of data returned"
+		],
+		
+		["u8", "bNumInterfaces", "
+				Number of interfaces supported by this speed configuration"
+		],
+		
+		["u8", "bConfigurationValue", "
+				Value to use to select configuration"
+		],
+		
+		["u8", "iConfiguration", "
+				Index of string descriptor"
+		],
+		
+		["u8", "bmAttributes", "
+				Same as Configuration descriptor"
+		],
+		
+		["u8", "bMaxPower", "
+				Same as Configuration descriptor"
+		]
+	]
+]

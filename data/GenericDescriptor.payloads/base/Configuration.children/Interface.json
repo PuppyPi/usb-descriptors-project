@@ -1,0 +1,47 @@
+[
+	"doc": "TODO",
+	
+	"parent": "Configuration",
+	"container": "Generic",
+		"bDescriptorType": 4,
+	
+	
+	
+	"fields":
+	[
+		["u8", "bInterfaceNumber", "
+				Number of this interface. Zero-based value identifying the index in the array of concurrent interfaces supported by this configuration."
+		],
+		
+		["u8", "bAlternateSetting", "
+				Value used to select this alternate setting for the interface identified in the prior field"
+		],
+		
+		["u8", "bNumEndpoints", "
+				Number of endpoints used by this interface (excluding endpoint zero). If this value is zero, this interface only uses the Default Control Pipe."
+		],
+		
+		["u8", "bInterfaceClass", "
+				Class code (assigned by the USB-IF).
+				A value of zero is reserved for future standardization.
+				If this field is set to FFH, the interface class is vendor-specific.
+				All other values are reserved for assignment by the USB-IF."
+		],
+		
+		["u8", "bInterfaceSubClass", "
+				Subclass code (assigned by the USB-IF). These codes are qualified by the value of the bInterfaceClass field.
+				If the bInterfaceClass field is reset to zero, this field must also be reset to zero.
+				If the bInterfaceClass field is not set to FFH, all values are reserved for assignment by the USB-IF."
+		],
+		
+		["u8", "bInterfaceProtocol", "
+				Protocol code (assigned by the USB-IF). These codes are qualified by the value of the bInterfaceClass and the bInterfaceSubClass fields. If an interface supports class-specific requests, this code identifies the protocols that the device uses as defined by the specification of the device class.
+				If this field is reset to zero, the device does not use a class-specific protocol on this interface.
+				If this field is set to FFH, the device uses a vendor-specific protocol for this interface."
+		],
+		
+		["u8", "iInterface", "
+				Index of string descriptor describing this interface"
+		]
+	]
+]

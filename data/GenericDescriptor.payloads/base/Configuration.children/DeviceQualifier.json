@@ -1,0 +1,40 @@
+[
+	"doc": "TODO",
+	
+	"parent": "Configuration",
+	"container": "Generic",
+		"bDescriptorType": 6,
+	
+	
+	
+	"fields":
+	[
+		["u16l", "bcdUSB", "
+				USB specification version number (e.g., 0200H for V2.00 )"
+		],
+		
+		["u8", "bDeviceClass", "
+				Class Code"
+		],
+		
+		["u8", "bDeviceSubClass", "
+				SubClass Code"
+		],
+		
+		["u8", "bDeviceProtocol", "
+				Protocol Code"
+		],
+		
+		["u8", "bMaxPacketSize0", "
+				Maximum packet size for other speed"
+		],
+		
+		["u8", "bNumConfigurations", "
+				Number of Other-speed Configurations"
+		],
+		
+		[1, "= 00", "
+				Reserved for future use, must be zero"
+		]
+	]
+]

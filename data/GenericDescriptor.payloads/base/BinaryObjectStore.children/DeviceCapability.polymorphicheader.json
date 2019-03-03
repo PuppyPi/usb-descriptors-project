@@ -1,0 +1,20 @@
+[
+	"doc": "USB 3.2 Specification, §9.6.2, p377, Table 9-12",
+	
+	"parent": "BinaryObjectStore",
+	"container": "Generic",
+		"bDescriptorType": 16,
+	
+	
+	
+	"fields":
+	[
+		["u8", "bDevCapabilityType", "
+				Valid values are listed in Table 9-14."
+		],
+		
+		["*", "CapabilityDependent", "
+				Capability-specific format."
+		]
+	]
+]

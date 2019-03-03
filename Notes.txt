@@ -1,0 +1,14 @@
+• A ParentHeader is one in which there are no other fields after the given struct, but there is an array of concatenated whole other descriptors!
+	• Note: The USB specification considers some descriptors that come after others to "belong" to them, but this is not reflected in their bLength's, but in the toplevel (usually Configuration) descriptor's bLength!  So it really is a child of that one topologically, and only logically "belongs" to the preceding Interface or Endpoint or etc. descriptor.
+
+• A PolymorphicHeader is one in which there are no other descriptors after it, but there is extra information which some special field[s] and/or other context tell you how to interpret it!
+	(Eg, the overall descriptor structure is this, and the bDescriptorType is that special field that tells you how to interpret the payload.  But be careful, bDescriptorType isn't *all* you need!  Other context can be necessary too!  That other context is provided though (and in a semantic format), don't worry :) )
+
+• A Toplevel Descriptor is one you can use the USB GET_DESCRIPTOR request on!
+	This is indicated by {"parent": null} in the descriptor body :>
+
+• Fields starting with lowercase 'i' then an uppercase letter are indexes for String Descriptors! :)
+	+ Note that "idXyz" starts with lowercase 'i' but not an uppercase thing!
+
+• If you add text not in the specification, be sure to add a signature of your name (if it's a temporary collaboration note) or of the project (if it's meant to be permanent) like so:
+	—USB Descriptors Project

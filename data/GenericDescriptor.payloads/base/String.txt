@@ -1,0 +1,7 @@
+The format of the payload of String Descriptors is either:
+	
+	• For Index 0:
+		A u16l[] of LANGID's, which indicate the union superset of supported LANGIDs for all other string descriptors.
+	
+	• For Index != 0:
+		A Unicode String encoded in UTF16-LE :)

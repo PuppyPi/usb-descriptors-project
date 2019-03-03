@@ -1,0 +1,30 @@
+[
+	"doc": "
+		The general USB descriptor format (it's not listed explicitly in the spec).
+			—USB Descriptors Project",
+	
+	"parent": null,
+	"container": null,
+	
+	
+	
+	"fields":
+	[
+		["u8", "bLength", "
+				The length of the entire descriptor (including this header!) in bytes
+					—USB Descriptors Project"
+		],
+		
+		["u8", "bDescriptorType", "
+				The constant value that indicates which descriptor it is (which format it should be decoded in).
+				Note that this might require using the bLength and knowledge of the containing device's class
+				and/or vendor to combine with this to qualify exactly which actual descriptor type it is!
+					—USB Descriptors Project"
+		]
+		
+		["=bLength", "payload", "
+				The interpretation of this is qualified primarily by bDescriptorType but also by other aspects of context.
+					—USB Descriptors Project"
+		]
+	]
+]
