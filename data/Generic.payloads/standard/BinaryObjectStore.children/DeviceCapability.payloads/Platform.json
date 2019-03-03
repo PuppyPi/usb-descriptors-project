@@ -5,7 +5,7 @@
 		USB 3.2 Specification, §9.6.2, p378, Table 9-14",
 	
 	"container": "DeviceCapability",
-		"bDevCapabilityType": 5
+		"bDevCapabilityType": 5,
 	
 	
 	
