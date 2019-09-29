@@ -10,59 +10,59 @@
 	"fields":
 	[
 		["u16l", "bcdUSB", "
-				USB Specification Release Number in Binary-Coded Decimal (i.e., 2.10 is 210H). This field identifies the release of the USB Specification with which the device and its descriptors are compliant."
-		],
+				USB Specification Release Number in Binary-Coded Decimal (i.e., 2.10 is 210H). This field identifies the release of the USB Specification with which the device and its descriptors are compliant.
+		"],
 		
 		["u8", "bDeviceClass", "
 				Class code (assigned by the USB-IF).
 				If this field is reset to zero, each interface within a configuration specifies its own class information and the various interfaces operate independently.
 				If this field is set to a value between 1 and FEH, the device supports different class specifications on different interfaces and the interfaces may not operate independently. This value identifies the class definition used for the aggregate interfaces.
-				If this field is set to FFH, the device class is vendor-specific."
-		],
+				If this field is set to FFH, the device class is vendor-specific.
+		"],
 		
 		["u8", "bDeviceSubClass", "
 				Subclass code (assigned by the USB-IF).
 				These codes are qualified by the value of the bDeviceClass field.
 				If the bDeviceClass field is reset to zero, this field must also be reset to zero.
-				If the bDeviceClass field is not set to FFH, all values are reserved for assignment by the USB-IF."
-		],
+				If the bDeviceClass field is not set to FFH, all values are reserved for assignment by the USB-IF.
+		"],
 		
 		["u8", "bDeviceProtocol", "
 				Protocol code (assigned by the USB-IF). These codes are qualified by the value of the bDeviceClass and the bDeviceSubClass fields. If a device supports class-specific protocols on a device basis as opposed to an interface basis, this code identifies the protocols that the device uses as defined by the specification of the device class.
 				If this field is reset to zero, the device does not use class-specific protocols on a device basis. However, it may use class-specific protocols on an interface basis.
-				If this field is set to FFH, the device uses a vendor-specific protocol on a device basis."
-		],
+				If this field is set to FFH, the device uses a vendor-specific protocol on a device basis.
+		"],
 		
 		["u8", "bMaxPacketSize0", "
-				Maximum packet size for endpoint zero (only 8, 16, 32, or 64 are valid)"
-		],
+				Maximum packet size for endpoint zero (only 8, 16, 32, or 64 are valid)
+		"],
 		
 		["u16l", "idVendor", "
-				Vendor ID (assigned by the USB-IF)"
-		],
+				Vendor ID (assigned by the USB-IF)
+		"],
 		
 		["u16l", "idProduct", "
-				Product ID (assigned by the manufacturer)"
-		],
+				Product ID (assigned by the manufacturer)
+		"],
 		
 		["u16l", "bcdDevice", "
-				Device release number in binary-coded decimal"
-		],
+				Device release number in binary-coded decimal
+		"],
 		
 		["u8", "iManufacturer", "
-				Index of string descriptor describing manufacturer"
-		],
+				Index of string descriptor describing manufacturer
+		"],
 		
 		["u8", "iProduct", "
-				Index of string descriptor describing product"
-		],
+				Index of string descriptor describing product
+		"],
 		
 		["u8", "iSerialNumber", "
-				Index of string descriptor describing the device’s serial number"
-		],
+				Index of string descriptor describing the device’s serial number
+		"],
 		
 		["u8", "bNumConfigurations", "
-				Number of possible configurations"
-		]
+				Number of possible configurations
+		"]
 	]
 }

@@ -1,7 +1,9 @@
 [
 	"doc": "
 		What spec is this (the last two fields) in!?!  It's not in §9.6.6 of even the USB 3.x spec!!
-			—PP",
+			—PP
+	",
+	
 	
 	"parent": "Configuration",
 	"container": "Generic",
@@ -17,32 +19,32 @@
 				Bit 3...0, The endpoint number
 				Bit 6...4, Reserved, reset to zero
 				Bit 7, Direction, ignored for control endpoints
-				0 = OUT endpoint
-				1 = IN endpoint"
-		],
+					0 = OUT endpoint
+					1 = IN endpoint
+		"],
 		
 		["u8", "bmAttributes", "
 				This field describes the endpoint’s attributes when it is configured using the bConfigurationValue.
 				Bits 1..0, Transfer Type
-				00 = Control
-				01 = Isochronous
-				10 = Bulk
-				11 = Interrupt
+					00 = Control
+					01 = Isochronous
+					10 = Bulk
+					11 = Interrupt
 				If not an isochronous endpoint, bits 5..2 are reserved and must be set to zero. If isochronous, they are defined as follows:
-				Bits 3..2, Synchronization Type
-				00 = No Synchronization
-				01 = Asynchronous
-				10 = Adaptive
-				11 = Synchronous
-				Bits 5..4, Usage Type
-				00 = Data endpoint
-				01 = Feedback endpoint
-				10 = Implicit feedback Data endpoint
-				11 = Reserved
+					Bits 3..2, Synchronization Type
+						00 = No Synchronization
+						01 = Asynchronous
+						10 = Adaptive
+						11 = Synchronous
+					Bits 5..4, Usage Type
+						00 = Data endpoint
+						01 = Feedback endpoint
+						10 = Implicit feedback Data endpoint
+						11 = Reserved
 				Refer to Chapter 5 for more information.
 				All other bits are reserved and must be reset to zero.
-				Reserved bits must be ignored by the host."
-		],
+				Reserved bits must be ignored by the host.
+		"],
 		
 		["u16l", "wMaxPacketSize", "
 				Maximum packet size this endpoint is capable of sending or receiving when this configuration is selected.
@@ -50,13 +52,13 @@
 				For all endpoints, bits 10..0 specify the maximum packet size (in bytes).
 				For high-speed isochronous and interrupt endpoints:
 				Bits 12..11 specify the number of additional transaction opportunities per microframe:
-				00 = None (1 transaction per microframe)
-				01 = 1 additional (2 per microframe)
-				10 = 2 additional (3 per microframe)
-				11 = Reserved
+					00 = None (1 transaction per microframe)
+					01 = 1 additional (2 per microframe)
+					10 = 2 additional (3 per microframe)
+					11 = Reserved
 				Bits 15..13 are reserved and must be set to zero.
-				Refer to Chapter 5 for more information."
-		],
+				Refer to Chapter 5 for more information.
+		"],
 		
 		["u8", "bInterval", "
 				Interval for polling endpoint for data transfers.
@@ -65,17 +67,17 @@
 				For full-/low-speed interrupt endpoints, the value of this field may be from 1 to 255.
 				For high-speed interrupt endpoints, the bInterval value is used as the exponent for a 2^(bInterval-1) value; e.g., a bInterval of 4 means a period of 8 (2^(4-1)). This value must be from 1 to 16.
 				For high-speed bulk/control OUT endpoints, the bInterval must specify the maximum NAK rate of the endpoint. A value of 0 indicates the endpoint never NAKs. Other values indicate at most 1 NAK each bInterval number of microframes. This value must be in the range from 0 to 255.
-				See Chapter 5 description of periods for more detail."
-		],
+				See Chapter 5 description of periods for more detail.
+		"],
 		
 		["u8", "bRefresh", "
 				What spec is this in!?!  It's not in §9.6.6 of even the USB 3.0 spec!!
-					—PP"
-		],
+					—PP
+		"],
 		
 		["u8", "bSynchAddress", "
 				What spec is this in!?!  It's not in §9.6.6 of even the USB 3.0 spec!!
-					—PP"
-		]
+					—PP
+		"]
 	]
 ]

@@ -12,18 +12,18 @@
 	"fields":
 	[
 		["u8", "bReserved", "
-				This field is reserved and shall be set to zero."
-		],
+				This field is reserved and shall be set to zero.
+		"],
 		
 		[16, "PlatformCapabilityUUID", "
 				This is a 128-bit number that uniquely identifies
-				a platform specific capability of the device."
-		],
+				a platform specific capability of the device.
+		"],
 		
 		["*", "CapabilityData", "
 				This is a variable-length field containing data
 				associated with the platform specific capability.
-				This field may be zero bytes in length."
-		]
+				This field may be zero bytes in length.
+		"]
 	]
 ]

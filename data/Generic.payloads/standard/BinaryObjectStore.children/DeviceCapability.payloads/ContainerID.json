@@ -9,7 +9,8 @@
 		technology specific manner.
 		
 		USB 3.2 Specification, §9.6.2.3, p382, Table 9-17
-		USB 3.2 Specification, §9.6.2, p378, Table 9-14",
+		USB 3.2 Specification, §9.6.2, p378, Table 9-14
+	",
 	
 	"container": "DeviceCapability",
 		"bDevCapabilityType": 4,
@@ -19,8 +20,8 @@
 	"fields":
 	[
 		["u8", "bReserved", "
-				This field is reserved and shall be set to zero."
-		],
+				This field is reserved and shall be set to zero.
+		"],
 		
 		[16, "ContainerID", "
 				This is a 128-bit number that is unique to a device
@@ -31,7 +32,7 @@
 				independent of means of connectivity.
 				
 				Refer to IETF RFC 4122 for details on generation of
-				a UUID."
-		]
+				a UUID.
+		"]
 	]
 ]
