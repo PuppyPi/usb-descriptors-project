@@ -10,7 +10,7 @@
 	"fields":
 	[
 		["u8", "bDevCapabilityType", "
-				Valid values are listed in Table 9-14.
+				Valid values are listed in Table 9-14, p378.
 		"],
 		
 		["*", "CapabilityDependent", "
